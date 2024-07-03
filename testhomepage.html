@@ -9,6 +9,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover {
+  background-color: #404040;
+  color: #fff;
+  border-radius: 7px;
+  padding: 3px 3px;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+  background-color: #fff;
+  padding: 5px 5px;
+  border: 2px solid #404040;
+  border-radius: 7px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #404040;
+ margin-top: 10px;
+  
+}
         .label {
   color: white;
   padding: 8px;
@@ -126,7 +152,13 @@ color: #fff;
 <span class="label standard">Standard</span>
 <span class="label other">Other</span>
 
-    
+    <h2>Information Text</h2>
+    <div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Insert some information here. It can be about anything to do with the text above.</p>
+  </div>
+</div>
     <footer>
             <h2>My account button test</h2>
         <button onclick="myFunction()">My Project Coral Account</button>
