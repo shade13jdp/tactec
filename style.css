@@ -1,132 +1,141 @@
-   /* Header Styles */
- header {
-        color: #000;
-        position: -webkit-sticky; /* For Safari */
-        position: sticky;
-        top: 0;
-        backdrop-filter: blur(5px);
-        font-size: 18px;
-     width: 100%;
-     margin: 0;
-        }
-        body {
-margin: 0;
-        padding: 0;
-            text-align: center;
-            background-color: #ffffff;
-        }
-    /* Input Styles */
-input[type=text], select {
-    
-width: 100%;
-padding: 8px 8px;
-background-color: #ffffff;
-font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-border: 2px solid #404040;
-border-radius: 7px;
-padding: 10px 20px;
-font-size: 16px;
-opacity: 0.6;
-transition: 0.1s;
+/* Main Website Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+
+header {
+    color: #000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+}
+
+.headertext {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 7px;
+    padding: 2px 2px;
+    opacity: 0.6;
+    transition: 0.1s;
+    padding-bottom: 3px;
+}
+
+.headertext:hover {
+    background-color: #404040;
+    opacity: 0.8;
+}
+
+/* Input Styles */
+
+input[type=text],
+select {
+
+    width: 100%;
+    padding: 8px 8px;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: 2px solid #404040;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.1s;
 }
 
 input[type=submit] {
-    
-background-color: #ffffff;
-font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-border: 2px solid #404040;
-border-radius: 7px;
-padding: 10px 20px;
-font-size: 16px;
-opacity: 0.6;
-transition: 0.1s;
-width: 100%;
+
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid #404040;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.1s;
+    width: 100%;
 }
 
 input[type=submit]:hover {
 
-background-color: #404040;
+    background-color: #404040;
 }
 
-        /* Text Styles */
-        h2 {
-            font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-            text-align: center;
-        }
+/* Text Styles */
 
-        .headertext {
-            font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-            border-radius: 7px;
-            padding: 2px 2px;
-            opacity: 0.6;
-            transition: 0.1s;
-            padding-bottom: 3px;
-        }
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
 
-        .headertext:hover {
-            background-color: #404040;
-            opacity: 0.8;
-        }
-
-        p {
-            font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-            font-size: 18px;
-            text-align: center;
-        }
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+}
 
 /* Buttons */
 
-        button {
-            background-color: #ffffff;
-            font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-            border: 2px solid #404040;
-            border-radius: 7px;
-            padding: 10px 20px;
-            font-size: 16px;
-            opacity: 0.6;
-            transition: 0.1s;
-            color: #000;
-        }
+button {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: 2px solid #404040;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.1s;
+    color: #000;
+}
 
-        button:hover {
-            background-color: #404040;
-            color: #ffffff;
-        }
+button:hover {
+    background-color: #404040;
+    color: #ffffff;
+}
 
-        purchase {
-            background-color: #ffffff;
-            font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-            border: 2px solid #404040;
-            border-radius: 7px;
-            padding: 10px 20px;
-            font-size: 16px;
-            opacity: 0.6;
-            transition: 0.1s;
-            color: #000;
-           text-decoration: none;
-        }
+purchase {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: 2px solid #404040;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.1s;
+    color: #000;
+    text-decoration: none;
+}
 
-        purchase:hover {
-            background-color: #6fc276;
-            color: #ffffff;
-        }
+purchase:hover {
+    background-color: #6fc276;
+    color: #ffffff;
+}
 
 /* Images */
-        img {
-            border: 2px solid #404040;
-            border-radius: 7px;
-        }
+
+img {
+    border: 2px solid #404040;
+    border-radius: 7px;
+}
