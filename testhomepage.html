@@ -125,11 +125,22 @@ color: #fff;
 </head>
 <body>
     <header>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
         <span class="headertext">Menu Test</span>
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
- <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
     </header>
 <h2>Admin Test Page</h2>
