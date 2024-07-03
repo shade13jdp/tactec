@@ -7,7 +7,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Header Styles */
+/* Header and Footer Styles */
 
 header {
     color: #000;
@@ -33,7 +33,31 @@ header {
 
 .headertext:hover {
     background-color: #404040;
-    opacity: 0.8;
+    opacity: 0.6;
+}
+
+footer {
+    color: #fff;
+    backdrop-filter: blur(5px);
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+}
+
+footerlink {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 7px;
+    padding: 2px 2px;
+    opacity: 0.6;
+    transition: 0.1s;
+    padding-bottom: 3px;
+}
+
+footerlink:hover {
+    background-color: #404040;
+    opacity: 0.6;
 }
 
 /* Input Styles */
