@@ -25,6 +25,23 @@ body {
     background-color: #ffffff;
 }
 
+.label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+  border-radius: 7px;
+  border: 2px solid #404040;
+}
+
+.standard { /* Grey */
+background-color: #404040;
+} 
+
+.other { /* White */
+background-color: #fff;
+color: #000;
+}
+
 /* Header and Footer Styles */
 
 header {
