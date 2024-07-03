@@ -1,5 +1,23 @@
 /* Main Website Styles */
 
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #fff;
+  text-align: center;
+  border: 2px solid #404040;
+  border-radius: 7px;
+}
+
+#mydivheader {
+  border-radius: 7px;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #fff;
+  color: #000;
+}
+
 body {
     margin: 0;
     padding: 0;
