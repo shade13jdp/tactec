@@ -1,4 +1,4 @@
-       /* Header Styles */
+   /* Header Styles */
  header {
         color: #000;
         position: -webkit-sticky; /* For Safari */
@@ -12,9 +12,8 @@
         body {
 margin: 0;
         padding: 0;
-            background-image: url('bg.avif');
-      background-property: fixed;
             text-align: center;
+            background-color: #ffffff;
         }
     /* Input Styles */
 input[type=text], select {
@@ -22,9 +21,9 @@ input[type=text], select {
 width: 100%;
 padding: 8px 8px;
 background-color: #ffffff;
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-style: normal;
+font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 border: 2px solid #0069f3;
 border-radius: 7px;
 padding: 10px 20px;
@@ -36,9 +35,9 @@ transition: 0.1s;
 input[type=submit] {
     
 background-color: #ffffff;
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-style: normal;
+font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 border: 2px solid #0069f3;
 border-radius: 7px;
 padding: 10px 20px;
@@ -55,16 +54,16 @@ background-color: #0069f3;
 
         /* Text Styles */
         h2 {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-style: normal;
             text-align: center;
         }
 
         .headertext {
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            font-style: normal;
+            font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
             border-radius: 7px;
             padding: 2px 2px;
             opacity: 0.6;
@@ -78,18 +77,18 @@ background-color: #0069f3;
         }
 
         p {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
             font-size: 18px;
             text-align: center;
         }
 
         button {
             background-color: #ffffff;
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
             border: 2px solid #0069f3;
             border-radius: 7px;
             padding: 10px 20px;
@@ -104,6 +103,6 @@ background-color: #0069f3;
         }
 
         img {
-            border: 2px solid #0069f3;
+            border: 2px solid #404040;
             border-radius: 7px;
         }
