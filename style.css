@@ -1,5 +1,3 @@
-/* Main Website Styles */
-
 body {
 	margin: 0;
 	padding: 0;
@@ -20,17 +18,6 @@ header {
 	width: 100%;
 	margin: 0;
 	z-index: 20;
-}
-
-.headertext {
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-	border-radius: 7px;
-	padding: 2px 2px;
-	opacity: 0.6;
-	transition: 0.1s;
-	padding-bottom: 3px;
 }
 
 footer {
@@ -116,26 +103,30 @@ p {
 	text-align: center;
 }
 
-/* Buttons */
+/* Button */
 
 button {
 	background-color: #ffffff;
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-style: normal;
-	border: 2px solid #404040;
+	border: 0px solid #404040;
 	border-radius: 7px;
 	padding: 10px 20px;
 	font-size: 16px;
 	opacity: 0.6;
 	transition: 0.1s;
 	color: #000;
+	border: 2px solid #404040;
 }
 
 button:hover {
+	border: 2px solid #404040;
 	background-color: #404040;
-	color: #ffffff;
+	color: #fff;
 }
+
+/* Purchase Button */
 
 purchase {
 	background-color: #ffffff;
@@ -157,38 +148,68 @@ purchase:hover {
 	color: #ffffff;
 }
 
-/* Menu Buttons */
+/* Header */
 
-.icon-bar {
-	width: 50%;
-	overflow: auto;
-	display: inline-table;
-	backdrop-filter: blur(5px);
-}
-
-.icon-bar a {
-	float: left;
-	width: 20%;
+.header {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #f1f1f1;
+	padding: 30px;
 	text-align: center;
-	padding: 12px 0;
-	transition: all 0.1s ease-in-out;
-	color: #404040;
-	font-size: 30px;
-	opacity: 0.6;
 }
 
-.icon-bar a:hover {
-	background-color: #404040;
-	color: #fff;
-	border-radius: 7px;
-	opacity: 0.6;
+#navbar {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	overflow: hidden;
+	background-color: #33333300;
 }
 
-.active {
-	background-color: #fff;
-	color: #fff;
+#navbar a {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	float: left;
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#navbar a:hover {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #dddddd2c;
+	color: black;
 	border-radius: 7px;
-	opacity: 0.6;
+}
+
+#navbar a.active {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #acacac9c;
+	color: black;
+	border-radius: 7px;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky+.content {
+	padding-top: 60px;
 }
 
 /* Images */
