@@ -1,317 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <!-- Settings -->
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project Coral | CQB Training</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-         <script src="https://kit.fontawesome.com/441585960b.js" crossorigin="anonymous"></script>
-         <style>
-            /* Main Website Styles */
+
+   <!-- Settings -->
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Project Coral | CQB Training</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/441585960b.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+
+      <!-- Header -->
+
+      <header>
+         <div id="navbar">
+            <a>Project Coral</a>
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">News</a>
+            <a href="javascript:void(0)">Contact</a>
+         </div>
+      </header>
+
+      <!-- Main Website Content -->
       
-      body {
-          margin: 0;
-          padding: 0;
-          text-align: center;
-          background-color: #ffffff;
-      }
+      <!-- Title -->
+      <h2>Project Coral CQB Training Facility</h2>
       
-      
-      /* Header and Footer Styles */
-      
-      header {
-          color: #000;
-          position: -webkit-sticky;
-          position: sticky;
-          top: 0;
-          backdrop-filter: blur(5px);
-          font-size: 18px;
-          width: 100%;
-          margin: 0;
-          z-index: 20;
-      }
-      
-      .headertext {
-          font-family: "Roboto", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          border-radius: 7px;
-          padding: 2px 2px;
-          opacity: 0.6;
-          transition: 0.1s;
-          padding-bottom: 3px;
-      }
-      
-      footer {
-          color: #fff;
-          backdrop-filter: blur(5px);
-          font-size: 18px;
-          width: 100%;
-          margin: 0;
-          background-color: #404040;
-          padding: 10px 10px;
-      }
-      
-      footerlink {
-          font-family: "Roboto", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          border-radius: 7px;
-          padding: 2px 2px;
-          opacity: 0.6;
-          transition: 0.1s;
-          padding-bottom: 3px;
-      }
-      
-      footerlink:hover {
-          background-color: #fff;
-          opacity: 0.6;
-          color: #404040;
-      }
-      
-      /* Input Styles */
-      
-      input[type=text],
-      select {
-      
-          width: 100%;
-          padding: 8px 8px;
-          background-color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          border: 2px solid #404040;
-          border-radius: 7px;
-          padding: 10px 20px;
-          font-size: 16px;
-          opacity: 0.6;
-          transition: 0.1s;
-      }
-      
-      input[type=submit] {
-      
-          background-color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-weight: 400;
-          font-style: normal;
-          border: 2px solid #404040;
-          border-radius: 7px;
-          padding: 10px 20px;
-          font-size: 16px;
-          opacity: 0.6;
-          transition: 0.1s;
-          width: 100%;
-      }
-      
-      input[type=submit]:hover {
-      
-          background-color: #404040;
-      }
-      
-      /* Text Styles */
-      
-      h2 {
-          font-family: "Roboto", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          text-align: center;
-      }
-      
-      p {
-          font-family: "Roboto", sans-serif;
-          font-weight: 400;
-          font-style: normal;
-          font-size: 18px;
-          text-align: center;
-      }
-      
-      /* Buttons */
-      
-      button {
-          background-color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          border: 2px solid #404040;
-          border-radius: 7px;
-          padding: 10px 20px;
-          font-size: 16px;
-          opacity: 0.6;
-          transition: 0.1s;
-          color: #000;
-      }
-      
-      button:hover {
-          background-color: #404040;
-          color: #ffffff;
-      }
-      
-      purchase {
-          background-color: #ffffff;
-          font-family: "Roboto", sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          border: 2px solid #404040;
-          border-radius: 7px;
-          padding: 10px 20px;
-          font-size: 16px;
-          opacity: 0.6;
-          transition: 0.1s;
-          color: #000;
-          text-decoration: none;
-      }
-      
-      purchase:hover {
-          background-color: #6fc276;
-          color: #ffffff;
-      }
-      
-      /* Menu Buttons */
-      
-      .icon-bar {
-        width: 50%;
-        overflow: auto;
-       display: inline-table;
-        backdrop-filter: blur(5px);
-      }
-      
-      .icon-bar a {
-        float: left;
-        width: 20%;
-        text-align: center;
-        padding: 12px 0;
-        transition: all 0.1s ease-in-out;
-        color: #404040;
-        font-size: 30px;
-        opacity: 0.6;
-      }
-      
-      .icon-bar a:hover {
-        background-color: #404040;
-        color: #fff;
-        border-radius: 7px;
-        opacity: 0.6;
-      }
-      
-      .active {
-        background-color: #fff;
-        color: #fff;
-        border-radius: 7px;
-        opacity: 0.6;
-      }
-      
-      /* Images */
-      
-      img {
-          border: 2px solid #404040;
-          border-radius: 7px;
-      }
-              .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      </style>
-        </head>
-    
-    <body>
-        
-        <!-- Header -->
-        
-        <header>
-             <header>
-<div class="topnav">
-        <span class="headertext">Project Coral</span><br>
-        <div class="icon-bar">
-          <a class="active" href="https://shade13jdp.github.io/"><i class="fa fa-home"></i></a> 
-          <a href="https://shade13jdp.github.io/tactec/weapon-systems"><i class="fa-solid fa-person-rifle"></i></a> 
-          <a href="#"><i class="fa-solid fa-shop"></i></a> 
-          <a href="https://discord.gg/5XvwwDMZwg"><i class="fa-brands fa-discord"></i></a>
-          <a href="#"><i class="fa-brands fa-shopify"></i></a> 
-  </div>
-</div>
-</div>
-</header>
-        </header> 
+      <!-- Tagline (long) -->
+      <p>Welcome to Project Coral, the most immersive CQB (Close-Quarter-Battle) tactical room-clearing and weapon handling available in New York. CQB or CQC is an extremely reliable tool used by Law Enforcement Agencies, Military and Private Security.</p>
 
 
-        <!-- Main Website Content -->
-        
-        <h2>Project Coral CQB Training Facility</h2> <!-- Title -->
-        
-        <p>Welcome to Project Coral, the most immersive CQB (Close-Quarter-Battle) tactical room-clearing and weapon handling available in New York. CQB or CQC is an extremely reliable tool used by Law Enforcement Agencies, Military and Private Security.</p> <!-- Tagline (long) -->
-       
-        <h2>Can't do face-to-face training?</h2> <!-- Title -->
-        
-        <p>We have multiple free and paid online training courses for you to choose from.</p> <!-- Paragraph explaining our online courses -->
-        
-        <a href="https://courses.projectcoral.us/">
-            <purchase>View Training Courses</purchase></a> <!-- Purchase Button Test -->
-        
-        <h2>Our Weapon Systems</h2> <!-- Title -->
-        
-        <p>Project Coral uses Blank Firing Firearms to help you complete your training course. This means that no one can get injured, while giving you the most realistic training experience possible.<br>View the list of available firearms below.</p> <!-- Paragraph explaining our weapon systems -->
-        <br><br>
-        
-        <!-- Weapon one -->
-        
-        <p>GLOCK 17 Gen5 (9mm)</p>
-        <br>
-        
-        <img src="glock17gen59mm.webp" alt="GLOCK 17 Gen5 9mm" height=150px width=250px class="center">
-        <br>
-        
-        <!-- Weapon two -->
-        
-        <p>Smith & Wesson M&P 15-22 Sport M-LOK 22 LR Rifle</p>
-        
-        <img src="smith1522.png" alt="Smith Wesson MP 15-22 Sport M-LOK 22 LR Rifle" height=150px width=300px class="center">
+      <!-- Title -->
+      <h2>Can't do face-to-face training?</h2>
 
-        <!-- Product Section -->
-        
-        <h2>View our available products</h2> <!-- Title -->
-        
-        <p>As we understand that some of our activities and plans are unavailable to certain people. We have decided to set more budget friendly prices for our training facilities.<br>All Equipment is provided for you.</p> <!-- Paragraph explaining our products -->
-        <br>
-        
-        <h2>CQB Basics: 1hr Session</h2> <!-- Product Name -->
-        
-        <p>During this session, you will learn basic gun control and room clearing. This does not include entering said building. As it is a budget option, we do not go into much detail. You can order more than one of these sessions.</p> <!-- Product Description -->
-        
-        <p>Price: $25</p> <!-- Product Price -->
-        
-        <a href="https://projectcoral.us/sessions/basic">
-        <button>Purchase Today</button> <!-- Purchase Button -->
-        </a>
-        <br>
-        
-        <h2>CQB Techniques: 1hr Session</h2> <!-- Product Name -->
-        
-        <p>During this session, we will go over more advanced techniques, mainly focusing on advanced gun handling and primary/secondary weapon usage. You can order more than one of these sessions.</p> <!-- Product Description -->
-        
-        <p>Price: $25</p> <!-- Product Price -->
-        
-        <a href="https://projectcoral.us/sessions/techniques">
-        <button>Purchase Today</button> <!-- Purchase Button -->
-        </a>
-        <br>
-        
-        <h2>CQB Advanced: 1hr Session</h2> <!-- Product Name -->
-        
-        <p>During this session, you will be taught how to clear different shaped rooms. For Example: hallways, T-Shaped-Rooms, Entering and exiting buildings and more. You can order more than one of these sessions. </p> 
-       
-        <p>Price: $25</p> <!-- Product Price -->
-        
-        <a href="https://projectcoral.us/sessions/advanced">
-        <button>Purchase Today</button> <!-- Purchase Button -->
-        </a>
-        <br>
+  
+      <!-- Paragraph explaining our online courses -->
+      <p>We have multiple free and paid online training courses for you to choose from.</p>
 
-        <!-- Footer -->
-    </body>
+
+      <!-- Title -->
+      <h2>Our Weapon Systems</h2>
+
+      <!-- Paragraph explaining our weapon systems -->
+      <p>Project Coral uses Blank Firing Firearms to help you complete your training course. This means that no one can get injured, while giving you the most realistic training experience possible.<br>View the list of available firearms below.</p>
+
+      <br><br>
+
+      <!-- Weapon one -->
+      <p>GLOCK 17 Gen5 (9mm)</p>
+      <br>
+      <img src="glock17gen59mm.webp" alt="GLOCK 17 Gen5 9mm" height=150px width=250px class="center">
+      <br>
+
+      <!-- Weapon two -->
+      <p>Smith & Wesson M&P 15-22 Sport M-LOK 22 LR Rifle</p>
+      <img src="smith1522.png" alt="Smith Wesson MP 15-22 Sport M-LOK 22 LR Rifle" height=150px width=300px class="center">
+
+      <!-- Product Section -->
+
+      <!-- Title -->
+      <h2>View our available products</h2>
+
+
+      <!-- Paragraph explaining our products -->
+      <p>As we understand that some of our activities and plans are unavailable to certain people. We have decided to set more budget friendly prices for our training facilities.<br>All Equipment is provided for you.</p>
+      
+      <br>
+
+      <!-- Product Name -->
+      <h2>CQB Techniques: 1hr Session</h2>
+
+      <!-- Product Description -->
+      <p>During this session, we will go over more advanced techniques, mainly focusing on advanced gun handling and primary/secondary weapon usage. You can order more than one of these sessions.</p>
+      
+      <!-- Product Price -->
+      <p>Price: $25</p>
+
+
+      <!-- Purchase Button -->
+      <a href="https://projectcoral.us/sessions/techniques">
+         <button>Purchase Today</button> 
+      </a>
+      <br>
+
+      <!-- Footer -->
+<footer>
+      <!-- Copyright Notice & Links -->
+      <p>Copyright Project Coral 2024</p>
+
+</footer>
+   </body>
+
+
+   <!-- Scripts -->
+   <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.fa-solid fa-ellipsis')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      
+   </script>
 </html>
