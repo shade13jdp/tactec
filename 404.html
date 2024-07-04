@@ -1,42 +1,331 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    
-    <!-- Settings -->
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project Coral | 404</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body>
-        
-        <!-- Header -->
-        
-        <header>
-            <span class="headertext">Project Coral</span>
-        </header> 
+
+   <!-- Settings -->
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Project Coral | CQB Training</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/441585960b.js" crossorigin="anonymous"></script>
+      <style>
+        body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #ffffff;
+}
 
 
-        <!-- Main Website Content -->
-        
-        <h2>Page not found: 404</h2> <!-- Error Name -->
-        
-        <p>We are unable to find the page you are searching for. Please double check you have entered the URL (website link) correctly and try again.</p> <!-- Error Description -->
+/* Header and Footer Styles */
 
-        <br>
-        
-        <h2>Still having problems?</h2> <!-- Extra Information Title -->
-        
-        <p>You can email <code>errors@projectcoral.us</code> for more information relating to your problem.</p> <!-- Extra Information Description -->
-        
-        <br>
-        
-        <p>Or visit our support page.</p>
-        
-        <a href="https://support.projectcoral.us/">
-            <button>Our Support Page</button></a> <!-- Support Page Button -->
+header {
+	color: #000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	backdrop-filter: blur(5px);
+	font-size: 18px;
+	width: 100%;
+	margin: 0;
+	z-index: 20;
+}
+
+footer {
+	color: #fff;
+	backdrop-filter: blur(5px);
+	font-size: 18px;
+	margin: 0;
+	background-color: #404040;
+	padding: 10px 10px;
+}
+
+footerlink {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border-radius: 7px;
+	padding: 2px 2px;
+	opacity: 0.6;
+	transition: 0.1s;
+	padding-bottom: 3px;
+  color: #fff;
+}
+
+footerlink:hover {
+	background-color: #fff;
+	opacity: 0.6;
+	color: #404040;
+}
+
+/* Input Styles */
+
+input[type=text],
+select {
+
+	width: 100%;
+	padding: 8px 8px;
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border: 2px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+}
+
+input[type=submit] {
+
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	border: 2px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+	width: 100%;
+}
+
+input[type=submit]:hover {
+
+	background-color: #404040;
+}
+
+/* Text Styles */
+
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+}
+
+p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px;
+	text-align: center;
+}
+
+sp {
+  font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+sp:hover {
+  font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+  color: #0069f3;
+  text-decoration: none;
+}
+
+/* Button */
+
+button {
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border: 0px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+	color: #000;
+	border: 2px solid #404040;
+}
+
+button:hover {
+	border: 2px solid #404040;
+	background-color: #404040;
+	color: #fff;
+}
+
+/* Purchase Button */
+
+purchase {
+	background-color: #ffffff;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	border: 2px solid #404040;
+	border-radius: 7px;
+	padding: 10px 20px;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: 0.1s;
+	color: #000;
+	text-decoration: none;
+}
+
+purchase:hover {
+	background-color: #6fc276;
+	color: #ffffff;
+}
+
+/* Header */
+
+.header {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+}
+
+#navbar {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	overflow: hidden;
+	background-color: #33333300;
+}
+
+#navbar a {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	float: left;
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#navbar a:hover {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #dddddd2c;
+	color: black;
+	border-radius: 7px;
+}
+
+#navbar a.active {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #acacac9c;
+	color: black;
+	border-radius: 7px;
+}
+
+.content {
+	padding: 16px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky+.content {
+	padding-top: 60px;
+}
+
+/* Images */
+
+img {
+	border: 2px solid #404040;
+	border-radius: 7px;
+}
+
+code {
+color: #0069f3;
+}
+      </style>
+   </head>
+   <body>
+
+      <!-- Header -->
+
+      <header>
+         <div id="navbar">
+            <a><i class="fa-solid fa-signature"></i>   Project Coral</a>
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">News</a>
+            <a href="javascript:void(0)">Contact</a>
+         </div>
+      </header>
+
+      <!-- Main Website Content -->
+      
+      <!-- Title -->
+      <h2>Error 404: Not Found</h2>
+      
+      <!-- Tagline (long) -->
+      <p>We are unable to find the page you are searching for. Please double check you have entered the URL (website link) correctly and try again.</p>
+      <br>
+
+       <p>You can email <code>errors@projectcoral.us</code> for more information relating to your problem.</p>
+
+      <!-- Footer -->
+       <br><br>
+<footer>
+      <!-- Copyright Notice & Links -->
+      <p>Copyright Project Coral 2024</p>
+      <p>Links</p>
+      <a href="https://discord.gg/5XvwwDMZwg">
+        <footerlink><i class="fa-brands fa-discord"></i></footerlink> 
+     </a>
+     <br><br>
+
+<!-- Credits -->
+<a href="https://discord.gg/5XvwwDMZwg">
+  <sp>Created using <br><i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-square-js"></i>   <i class="fa-brands fa-css3-alt"></i></sp>
+  </a>
+  <br><br>
+
+<a href="https://discord.gg/5XvwwDMZwg">
+<sp>Created by <br><i class="fa-solid fa-signature"></i> Project Coral</sp>
+</a>
+</footer>
+   </body>
+
+
+   <!-- Scripts -->
+   <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.fa-solid fa-ellipsis')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      
+   </script>
+</html>
